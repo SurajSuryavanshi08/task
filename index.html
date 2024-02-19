@@ -29,6 +29,7 @@
           box-sizing: border-box;
           font-family:sans-serif;
           color: #888; /* Light gray color */
+          display: flex;
         }
         .social-media-links {
           display: flex;
@@ -90,14 +91,9 @@
     display: flex;
     flex-direction: column;
 }
-  @media screen and (max-width: 455px) {
-      .first-division,
-      .second-division {
-          flex-direction: column;
-      }
-  }
+ 
 
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 1000px) {
     .social-media-links a img {
       width: 20px; /* Adjust the width according to your design */
       height: auto;
@@ -111,8 +107,71 @@
       line-height: 1.5;
       color: #555;
     }
+    .second-division{
+        flex-direction: column;
+    }
+    .first-division{
+        
+        flex-direction: column;
+    }
+    .vertical-list li {
+        margin-bottom: 10px;
+        font-size: 5px; /* Adjust the font size for smaller screens */
+    }
 }
+@media screen and (max-width: 768px) {
+    .text-uppercase {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
 
+    .list-unstyled.mb-0 li {
+        font-size: 10px; /* Adjust the font size for smaller screens */
+    }
+}
+.flex-container{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+@media screen and (max-width: 445px) {
+    .flex-container {
+        flex-direction:column;
+        align-items: center;
+    }
+    .logo{
+        height: 45px;
+        width: 100px;
+    }
+    .flo{
+        height: 60px;
+        width: 110px;
+    }
+    .social-media-links{
+        display: none;
+    }
+    
+
+}
+@media (max-width: 445px) {
+    /* Styles for screens with a maximum width of 440px or less */
+  
+    /* Adjust the styling for the button with dots.png */
+    .navbar-nav li.nav-item:last-child button {
+      padding: 5px; /* Add padding to the button */
+    }
+    
+    .navbar-nav li.nav-item:last-child img {
+      height: 20px; /* Adjust the height of the image */
+      width: 20px; /* Adjust the width of the image */
+    }
+  }
+  @media (max-width: 450px) {
+    .col-lg-3 {
+      flex: 0 0 100%; /* Make the columns take full width */
+      max-width: 100%;
+    }
+  }
+  
 
 
 
@@ -289,7 +348,7 @@
     </footer>
     
     <footer>
-        <div class="flex-container" style="display: flex; flex-direction: row; justify-content: space-between;">
+        <div class="flex-container" style="">
     
             <div class="first-division" style="background-color: transparent;">
                 <div class="social-media-links">
@@ -299,7 +358,7 @@
                     <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
                     <a href="#"><img src="youtube.png" alt="YouTube"></a>
                 </div>
-                <img src="logo.png" alt="Footer Image" style="width: 100%;">
+                <img class="logo" src="logo.png" alt="Footer Image" style="width: 100%;">
                 <ul class="vertical-list">
                     <li><h6>Bluestock Fintech</h6></li>
                     <li><h6>Pune Maharashtra</h6></li>
@@ -308,7 +367,7 @@
                     <li><h6>UDYAM-MH-01-v0138001</h6></li>
                 </ul>
     
-                <img src="Footer.png" alt="Footer Image" style="width: 100%;">
+                <img class="flo" src="Footer.png" alt="Footer Image" style="width: 100%;">
             </div>
     
             <div class="second-division" style="background-color: transparent;">
