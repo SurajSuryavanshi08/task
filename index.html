@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
@@ -74,6 +75,47 @@
         line-height: 2.5; 
         color: transparent;/* Adjust the value as needed for spacing */
     }
+    /* Default styles for larger screens */
+.social-media-links a img {
+  width: 40px; /* Adjust the width according to your design */
+  height: auto;
+}
+
+.first-division{
+    display: flex;
+    
+    flex-direction: column;
+}
+.second-division{
+    display: flex;
+    flex-direction: column;
+}
+  @media screen and (max-width: 455px) {
+      .first-division,
+      .second-division {
+          flex-direction: column;
+      }
+  }
+
+  @media screen and (max-width: 455px) {
+    .social-media-links a img {
+      width: 20px; /* Adjust the width according to your design */
+      height: auto;
+      padding: 1px;
+
+    }
+    .second-division p {
+      /* Add your styles for the <p> tag within the second division here */
+      /* Example styles: */
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+}
+
+
+
+
       
       </style>
   </head>
@@ -246,63 +288,52 @@
         <!-- Copyright -->
     </footer>
     
-  <footer>
-    <div class="first-division" style="background-color: transparent;">
-      <div class="social-media-links">
-        <a href="#"><img src="facebook-app-symbol.png" alt="Facebook"></a>
-        <a href="#"><img src="twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
-        <a href="#"><img src="youtube.png" alt="YouTube"></a>
-      </div>
-      <img src="logo.png" alt="Footer Image" style="width: 100%;">
-      <ul class="vertical-list">
-        <li><h6>Bluestock Fintech</h6></li>
-        <li><h6>Pune Maharashtra</h6></li>
-        <br>
-        <li><h6>MSME Registration No:</h6></li>
-        <li><h6>UDYAM-MH-01-v0138001</h6></li>
-      </ul>
-
-      <img src="Footer.png" alt="Footer Image" style="width: 100%;">
-    </div>
-
-    <div class="second-division" style="background-color: transparent;">
-      <p>In securities markets are subject to market risks, read all the related documents carefully before investing as prescribed by SEBI, Issued in the interest of the investors
-      </p>
-      <p>The clients can write to hello@bluestock.in for any account opening related queries. Also you can send IT/Tech related feedback to cto@bluestock.in
-        </p>
-        <br><br>
-      <p>Disclaimer: We are not a SEBI registered research analyst company. We do not provide any kind of stock recommendations, buy/sell stock tips, or investment and trading advice All the stock scripts shown in the BlueStock app are for educational purposes only. <br>
-         Before making any investment in the financial market, it is advisable to consult with your financial advisor. Remember that stock markets are subject to market nisas "Stock markets are subject to market risks.</p>
-            
-          </ul>
-        
-
-        <p>
-          
-        </p>
-      <!-- Copyright and Made in Pune, Maharashtra -->
-      
-    </div>
-  </footer>
+    <footer>
+        <div class="flex-container" style="display: flex; flex-direction: row; justify-content: space-between;">
+    
+            <div class="first-division" style="background-color: transparent;">
+                <div class="social-media-links">
+                    <a href="#"><img src="facebook-app-symbol.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                </div>
+                <img src="logo.png" alt="Footer Image" style="width: 100%;">
+                <ul class="vertical-list">
+                    <li><h6>Bluestock Fintech</h6></li>
+                    <li><h6>Pune Maharashtra</h6></li>
+                    <br>
+                    <li><h6>MSME Registration No:</h6></li>
+                    <li><h6>UDYAM-MH-01-v0138001</h6></li>
+                </ul>
+    
+                <img src="Footer.png" alt="Footer Image" style="width: 100%;">
+            </div>
+    
+            <div class="second-division" style="background-color: transparent;">
+                <p>In securities markets are subject to market risks, read all the related documents carefully before investing as prescribed by SEBI, Issued in the interest of the investors
+                </p>
+                <p>The clients can write to hello@bluestock.in for any account opening related queries. Also, you can send IT/Tech-related feedback to cto@bluestock.in
+                </p>
+                <br><br>
+                <p>Disclaimer: We are not a SEBI registered research analyst company. We do not provide any kind of stock recommendations, buy/sell stock tips, or investment and trading advice. All the stock scripts shown in the BlueStock app are for educational purposes only. <br>
+                    Before making any investment in the financial market, it is advisable to consult with your financial advisor. Remember that stock markets are subject to market risks.
+                </p>
+            </div>
+    
+        </div>
+    
+        <!-- Copyright and Made in Pune, Maharashtra -->
+    </footer>
+    
+    
+  
   <hr>
-  <div class="text-center p-3" style="background-color: #ddd;">
+  <div class="text-center p-3" style="background-color: #fff
+  ">
     &copy; Bluestock Fintech. All rights reserved. Made in ❤️ Pune, Maharashtra
   </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
     <!-- End Example Code -->
   </body>
 </html>
